@@ -1,0 +1,6 @@
+https://nodemailer.com/usage/using-gmail/
+https://hl7-definition.caristix.com/v2/HL7v2.5.1/Segments
+https://gemini.google.com/app
+https://github.com/LinuxForHealth/hl7v2-fhir-converter
+https://build.fhir.org/ig/HL7/v2-to-fhir/
+https://hl7messageparser.azurewebsites.net/Parse/Samples

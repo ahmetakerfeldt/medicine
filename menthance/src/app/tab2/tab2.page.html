@@ -1,0 +1,28 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Analyzed Patients
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div *ngFor="let patient of analyzedPatients">
+    <div class="patient-card">
+      <div>Firstname: {{patient.firstName}}</div>
+      <div>Lastname: {{patient.lastName}}</div>
+      <div>Gender: {{patient.gender}}</div>
+      <div>Phone Number: {{patient.phoneNumber}}</div>
+      <div>Email: {{patient.email}}</div>
+      <div>Observation Result</div>
+      <div [innerHtml]="patient.observationResult"></div>
+      <div class="mt-10">
+        <button *ngIf="!sendMailContainer[patient.id]" class="button" (click)="openSendMailContainer(patient)">Send Email</button>
+        <ng-container *ngIf="sendMailContainer[patient.id]">
+          <textarea [formControl]="emails" placeholder="Write the addresses you want to send mail to in order with a comma(,) between them." class="text-area"></textarea>
+          <button class="button" (click)="sendEmail(patient)">Send Email</button>
+        </ng-container>
+      </div>
+    </div>
+  </div>
+</ion-content>

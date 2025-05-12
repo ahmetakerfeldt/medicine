@@ -1,0 +1,7 @@
+{
+  "name": "medicine-frontend",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

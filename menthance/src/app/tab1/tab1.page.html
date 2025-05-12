@@ -1,0 +1,21 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      System Patients
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="patient-card" *ngFor="let patient of mockPatients">
+    <div>Firstname: {{patient.firstname}}</div>
+    <div>LastName: {{patient.lastname}}</div>
+    <div>Gender: {{patient.gender === 'F' ? 'Female' : 'Male'}}</div>
+    <div>Phone Number: {{patient.phoneNumber}}</div>
+    <div>Email: {{patient.email}}</div>
+    <div>Has HL7V2 message: {{!!patient.hl7}}</div>
+    <div class="mt-10">
+      <button [disabled]="loading" class="button" (click)="sendToAnalysis(patient)">Send to Analysis</button>
+    </div>
+  </div>
+</ion-content>
