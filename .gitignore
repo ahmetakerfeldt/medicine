@@ -10,3 +10,5 @@ medicine-mobile/.idea
 medicine-mobile/.vscode
 medicine-mobile/ios
 medicine-mobile/node_modules
+
+.idea
