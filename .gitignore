@@ -4,9 +4,9 @@
 ./medicine-middleware/node_modules
 ./medicine-middleware/test
 
-./menthance/node_modules
-./menthance/.angular
-./menthance/.idea
-./menthance/.vscode
-./menthance/ios
-./menthance/node_modules
+medicine-mobile/node_modules
+medicine-mobile/.angular
+medicine-mobile/.idea
+medicine-mobile/.vscode
+medicine-mobile/ios
+medicine-mobile/node_modules
