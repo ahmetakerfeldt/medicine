@@ -1,0 +1,12 @@
+./medicine-middleware/.env
+./medicine-middleware/docker
+./medicine-middleware/.idea
+./medicine-middleware/node_modules
+./medicine-middleware/test
+
+./menthance/node_modules
+./menthance/.angular
+./menthance/.idea
+./menthance/.vscode
+./menthance/ios
+./menthance/node_modules
